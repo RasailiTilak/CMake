@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named calc
+
+# Build rule for target.
+calc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calc
+.PHONY : calc
+
+# fast build rule for target.
+calc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/build
+.PHONY : calc/fast
+
+#=============================================================================
 # Target rules for targets named a.out
 
 # Build rule for target.
@@ -128,30 +141,6 @@ a.out: cmake_check_build_system
 a.out/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/build
 .PHONY : a.out/fast
-
-calc.o: calc.cpp.o
-.PHONY : calc.o
-
-# target to build an object file
-calc.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/calc.cpp.o
-.PHONY : calc.cpp.o
-
-calc.i: calc.cpp.i
-.PHONY : calc.i
-
-# target to preprocess a source file
-calc.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/calc.cpp.i
-.PHONY : calc.cpp.i
-
-calc.s: calc.cpp.s
-.PHONY : calc.s
-
-# target to generate assembly for a file
-calc.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/calc.cpp.s
-.PHONY : calc.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -177,6 +166,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mylib/calc.o: mylib/calc.cpp.o
+.PHONY : mylib/calc.o
+
+# target to build an object file
+mylib/calc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/mylib/calc.cpp.o
+.PHONY : mylib/calc.cpp.o
+
+mylib/calc.i: mylib/calc.cpp.i
+.PHONY : mylib/calc.i
+
+# target to preprocess a source file
+mylib/calc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/mylib/calc.cpp.i
+.PHONY : mylib/calc.cpp.i
+
+mylib/calc.s: mylib/calc.cpp.s
+.PHONY : mylib/calc.s
+
+# target to generate assembly for a file
+mylib/calc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/mylib/calc.cpp.s
+.PHONY : mylib/calc.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... a.out"
-	@echo "... calc.o"
-	@echo "... calc.i"
-	@echo "... calc.s"
+	@echo "... calc"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mylib/calc.o"
+	@echo "... mylib/calc.i"
+	@echo "... mylib/calc.s"
 .PHONY : help
 
 

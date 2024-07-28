@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ubuntu/Desktop/cmake_tutorial/basic_01/CMake/basic_01/main.cpp" "CMakeFiles/a.out.dir/main.cpp.o" "gcc" "CMakeFiles/a.out.dir/main.cpp.o.d"
+  "/home/ubuntu/Desktop/cmake_tutorial/basic_01/CMake/basic_01/mylib/calc.cpp" "CMakeFiles/calc.dir/mylib/calc.cpp.o" "gcc" "CMakeFiles/calc.dir/mylib/calc.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

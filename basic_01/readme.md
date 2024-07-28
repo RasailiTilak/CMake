@@ -23,5 +23,12 @@
     ###   method _2
     - cmake --build build
     - ./build/a.out
-
-
+## create share libray and static libray
+- first make dir move the calc.cpp and calc.h inside the mylib folder
+    - mylib/
+        - calc.cpp
+        - calc.h
+ - #### change on the  CMakeLists.txt
+  -  check the library(ls ./build/)
+  - static library (libcalc.a)
+  - share library (libcalc.so)

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/a.out.dir/main.cpp.o CMakeFiles/a.out.dir/calc.cpp.o -o a.out 
+/usr/bin/c++ CMakeFiles/a.out.dir/main.cpp.o -o a.out  -Wl,-rpath,/home/ubuntu/Desktop/cmake_tutorial/basic_01/CMake/basic_01/build libcalc.so 

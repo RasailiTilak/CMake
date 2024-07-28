@@ -150,4 +150,4 @@ CMakeFiles/a.out.dir/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/ubuntu/Desktop/cmake_tutorial/basic_01/CMake/basic_01/calc.h
+ /home/ubuntu/Desktop/cmake_tutorial/basic_01/CMake/basic_01/mylib/calc.h
