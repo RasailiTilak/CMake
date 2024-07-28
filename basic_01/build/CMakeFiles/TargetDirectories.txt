@@ -1,0 +1,3 @@
+/home/ubuntu/Desktop/cmake_tutorial/basic_01/CMake/basic_01/build/CMakeFiles/a.out.dir
+/home/ubuntu/Desktop/cmake_tutorial/basic_01/CMake/basic_01/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/Desktop/cmake_tutorial/basic_01/CMake/basic_01/build/CMakeFiles/rebuild_cache.dir
